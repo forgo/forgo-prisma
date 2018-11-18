@@ -1,0 +1,10 @@
+# Keep up to date on error with prisma client lib when running `npm run start`
+https://github.com/prisma/prisma/issues/3453
+https://github.com/prisma/prisma/issues/3508
+
+/Users/elliott/Documents/GitHub/forgo-prisma/node_modules/ts-node/src/index.ts:261
+    return new TSError(diagnosticText, diagnosticCodes)
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/generated/prisma-client/index.ts(821,72): error TS2345: Argument of type '{ typeDefs: string; endpoint: string; }' is not assignable to parameter of type '{ typeDefs: string; endpoint: string; secret?: string | undefined; models: Model[]; }'.
+  Property 'models' is missing in type '{ typeDefs: string; endpoint: string; }'.
